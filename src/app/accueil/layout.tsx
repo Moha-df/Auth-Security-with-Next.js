@@ -11,7 +11,7 @@ export default async function AccueilLayout({
   const authToken = cookieStore.get('auth_token');
   
   if (!authToken) {
-    // Redirection côté serveur avant tout rendu
+    // Redirection côté erveur avant tout rendu
     redirect('/');
   }
   
